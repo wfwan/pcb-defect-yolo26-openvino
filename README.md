@@ -59,7 +59,7 @@ This model detects 6 types of PCB defects:
 
 <img width="718" height="230" alt="performance ok" src="https://github.com/user-attachments/assets/d124bd66-cb4b-4b1c-a349-dd4cac283e18" />
 
-|Model|FPS|
+|Model|Inference speed|
 |----|---|
 |PyTorch|58ms|
 |OpenVINO INT8|38ms|
