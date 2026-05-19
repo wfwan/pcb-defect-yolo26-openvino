@@ -31,6 +31,7 @@ This model detects 6 types of PCB defects:
    - Converted annotations to YOLO format
    - Created data.yaml with class definitions
    - Uploaded to Ultralytics Platform for training
+  
 2. Training Details
    |Model|YOLO26n|
    |-----|-------|
@@ -38,6 +39,7 @@ This model detects 6 types of PCB defects:
    |CPU|AMD EPYC 9655 96-Core Processor|
    |GPU|NVIDIA RTX 2000 Ada|
    |Training Cost| $0.13USD|
+   
 4. Export & Optimization
    - Exported trained PyTorch model to OpenVINO format
    - Applied INT8 quantization for CPU optimization
@@ -50,7 +52,8 @@ This model detects 6 types of PCB defects:
 |Precision|97.3%|
 |Recall|98%|
 
-|Mode|FPS|
+
+|Model|FPS|
 |----|---|
 |PyTorch|58ms|
 |OpenVINO INT8|38ms|
