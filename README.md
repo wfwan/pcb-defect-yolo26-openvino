@@ -17,6 +17,7 @@ The pipeline covers the full workflow - from dataset preparation and model train
 ## Classes
 This model detects 6 types of PCB defects:
 |Class|Description|
+|-----|-----------|
 |mouse_bite|Small notches on the edge of the PCB|
 |spurious_copper|Unwanted copper remaining after etching|
 |spur|Thin copper spike protruding from a trace|
@@ -32,22 +33,25 @@ This model detects 6 types of PCB defects:
    - Uploaded to Ultralytics Platform for training
 2. Training Details
    |Model|YOLO26n|
+   |-----|-------|
    |Platform|Ultralytics Platform|
    |CPU|AMD EPYC 9655 96-Core Processor|
    |GPU|NVIDIA RTX 2000 Ada|
    |Training Cost| $0.13USD|
-3. Export & Optimization
+4. Export & Optimization
    - Exported trained PyTorch model to OpenVINO format
    - Applied INT8 quantization for CPU optimization
   
 ## Results
 |Metric|Score|
+|------|------|
 |mAP50|99.0%|
 |mAP50-95|65.6%|
 |Precision|97.3%|
 |Recall|98%|
 
 |Mode|FPS|
+|----|---|
 |PyTorch|
 |OpenVINO INT8|
 
