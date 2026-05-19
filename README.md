@@ -27,30 +27,28 @@ This model detects 6 types of PCB defects:
 
 ## Pipeline
 1. Dataset Preparation
-   <img width="814" height="203" alt="dataset in Platform" src="https://github.com/user-attachments/assets/e4d1052d-6042-4e10-9fdf-d12eaa09e12a" />
    - Source dataset in Pascal VOC format
    - Converted annotations to YOLO format
    - Created data.yaml with class definitions
    - Uploaded to Ultralytics Platform for training
+   <img width="814" height="203" alt="dataset in Platform" src="https://github.com/user-attachments/assets/e4d1052d-6042-4e10-9fdf-d12eaa09e12a" />
+
   
-3. Training Details
-   <img width="1184" height="391" alt="Overview of YOLO platform" src="https://github.com/user-attachments/assets/eb636980-400f-4ab4-a9ec-ba16344a22b3" />
-   
+3. Training Details   
    |Model|YOLO26n|
    |-----|-------|
    |Platform|Ultralytics Platform|
    |CPU|AMD EPYC 9655 96-Core Processor|
    |GPU|NVIDIA RTX 2000 Ada|
    |Training Cost| $0.13USD|
+   <img width="1184" height="391" alt="Overview of YOLO platform" src="https://github.com/user-attachments/assets/eb636980-400f-4ab4-a9ec-ba16344a22b3" />
 
    
-4. Export & Optimization
-   <img width="1299" height="192" alt="Snipaste_2026-05-20_02-40-35-removebg-preview" src="https://github.com/user-attachments/assets/32f4f12c-dfd7-4f3c-80d4-8365339dac1a" />
-
+5. Export & Optimization
    - Exported trained PyTorch model to OpenVINO format
    - Applied INT8 quantization for CPU optimization
+<img width="1299" height="192" alt="Snipaste_2026-05-20_02-40-35-removebg-preview" src="https://github.com/user-attachments/assets/38ee65a6-18ca-430f-8fe0-4a7a0c9dffdf" />
 
-  
 ## Results
 |Metric|Score|
 |------|------|
