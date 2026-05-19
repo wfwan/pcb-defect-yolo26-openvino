@@ -31,6 +31,8 @@ This model detects 6 types of PCB defects:
    - Converted annotations to YOLO format
    - Created data.yaml with class definitions
    - Uploaded to Ultralytics Platform for training
+   <img width="814" height="203" alt="dataset in Platform" src="https://github.com/user-attachments/assets/e4d1052d-6042-4e10-9fdf-d12eaa09e12a" />
+
   
 2. Training Details
    |Model|YOLO26n|
@@ -39,10 +41,14 @@ This model detects 6 types of PCB defects:
    |CPU|AMD EPYC 9655 96-Core Processor|
    |GPU|NVIDIA RTX 2000 Ada|
    |Training Cost| $0.13USD|
+   <img width="1184" height="391" alt="Overview of YOLO platform" src="https://github.com/user-attachments/assets/eb636980-400f-4ab4-a9ec-ba16344a22b3" />
+
    
 4. Export & Optimization
    - Exported trained PyTorch model to OpenVINO format
    - Applied INT8 quantization for CPU optimization
+   <img width="666" height="333" alt="pytorch_to_openvino-removebg-preview" src="https://github.com/user-attachments/assets/69077439-7fdb-4886-99e0-b79aa3d40d7f" />
+
   
 ## Results
 |Metric|Score|
@@ -57,12 +63,15 @@ This model detects 6 types of PCB defects:
 |----|---|
 |PyTorch|58ms|
 |OpenVINO INT8|38ms|
+<img width="471" height="225" alt="inference improved from pytorch to openvino" src="https://github.com/user-attachments/assets/ba6de018-51a3-4a9a-b112-a07310a7ae9f" />
+
 
 ## Inference Modes
 ### Image
 ```
 python inference.py <path_to_image>
 ```
+<img width="894" height="452" alt="before vs after" src="https://github.com/user-attachments/assets/ef5033b0-89ac-4a2e-9412-dd1d7d4ac931" />
 
 ### Video or Live Webcam
 ```
