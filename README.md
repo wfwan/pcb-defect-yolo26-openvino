@@ -57,12 +57,12 @@ This model detects 6 types of PCB defects:
 |Precision|97.3%|
 |Recall|98%|
 
-<img width="718" height="230" alt="performance ok" src="https://github.com/user-attachments/assets/d124bd66-cb4b-4b1c-a349-dd4cac283e18" />
+<img width="721" height="111" alt="ov result better than pt" src="https://github.com/user-attachments/assets/0b1c635e-3aa9-4bbb-b2ec-08f67f7dee4e" />
 
 |Model|Inference time|
 |----|---|
-|PyTorch|58ms|
-|OpenVINO INT8|38ms|
+|PyTorch|54ms|
+|OpenVINO INT8|34ms|
 
 ## Inference Modes
 ### Image
