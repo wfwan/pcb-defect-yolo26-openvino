@@ -52,7 +52,16 @@ This model detects 6 types of PCB defects:
 
 |Mode|FPS|
 |----|---|
-|PyTorch|
-|OpenVINO INT8|
+|PyTorch|58ms|
+|OpenVINO INT8|38ms|
 
 ## Inference Modes
+### Image
+```
+python inference.py <path_to_image>
+```
+
+### Video or Live Webcam
+```
+python inference_video.py <path_to_video or 0 for webcam>
+```
