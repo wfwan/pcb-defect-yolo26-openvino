@@ -57,7 +57,7 @@ This model detects 6 types of PCB defects:
 |Precision|97.3%|
 |Recall|98%|
 
-<img width="721" height="111" alt="ov result better than pt" src="https://github.com/user-attachments/assets/0b1c635e-3aa9-4bbb-b2ec-08f67f7dee4e" />
+<img width="590" height="112" alt="Snipaste_2026-05-20_03-20-23" src="https://github.com/user-attachments/assets/06ba7ab1-9ac2-4f58-9d1b-7e54713d1531" />
 
 |Model|Inference time|
 |----|---|
