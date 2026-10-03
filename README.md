@@ -1,21 +1,12 @@
 # pcb-defect-yolo26-openvino
-Real-time PCB defect detection using YOLO26 optimized with OpenVINO INT8 quantization
+Real-time PCB defect detection using YOLO26 optimized with OpenVINO
 
 ## Overview
-PCB (Printed Circuit Board) defect detection is a critical step in electronics manufacturing. Traditional manual inspection is time-consuming, inconsistent, and prone to human error at scale.
-
-This project builds an end-to-end automated PCB defect detection pipeline using YOLO26, the latest NMS-free real-time object detection model by Ultralytics. The model is optimized using OpenVINO INT8 quantization for faster CPU inference, making it suitable for edge deployment in real manufacturing environments.
-
-The pipeline covers the full workflow - from dataset preparation and model training to optimized inference across three modes: static image, video, and live camera feed.
-
-### Key highlights:
-- 6 defect classes: mouse_bite, spurious_copper, spur, missing_hole, open_circuit, short
-- INT8 quantization via OpenVINO for faster CPU inference
-- Sliding window support for high-resolution images
-- Supports image, video, and live webcam inference
+Automated PCB defect detection using YOLO26. The model is optimized using OpenVINO for faster CPU inference.
+This project covers the full flow - from dataset preparation and model training to optimized inference across images and videos.
 
 ## Classes
-This model detects 6 types of PCB defects:
+Six types of PCB defects:
 |Class|Description|
 |-----|-----------|
 |mouse_bite|Small notches on the edge of the PCB|
@@ -27,10 +18,8 @@ This model detects 6 types of PCB defects:
 
 ## Pipeline
 1. Dataset Preparation
-   - Source dataset in Pascal VOC format
-   - Converted annotations to YOLO format
-   - Created data.yaml with class definitions
-   - Uploaded to Ultralytics Platform for training
+   - Source dataset in Pascal VOC format and converted annotations to YOLO format
+   - Created data.yaml with class definitions and uploaded to Ultralytics Platform for training
    <img width="814" height="203" alt="dataset in Platform" src="https://github.com/user-attachments/assets/e4d1052d-6042-4e10-9fdf-d12eaa09e12a" />
 
   
@@ -46,7 +35,6 @@ This model detects 6 types of PCB defects:
    
 5. Export & Optimization
    - Exported trained PyTorch model to OpenVINO format
-   - Applied INT8 quantization for CPU optimization
 <img width="1299" height="192" alt="Snipaste_2026-05-20_02-40-35-removebg-preview" src="https://github.com/user-attachments/assets/38ee65a6-18ca-430f-8fe0-4a7a0c9dffdf" />
 
 ## Results
@@ -58,11 +46,6 @@ This model detects 6 types of PCB defects:
 |Recall|98%|
 
 <img width="590" height="112" alt="Snipaste_2026-05-20_03-20-23" src="https://github.com/user-attachments/assets/06ba7ab1-9ac2-4f58-9d1b-7e54713d1531" />
-
-|Model|Inference time|
-|----|---|
-|PyTorch|54ms|
-|OpenVINO INT8|34ms|
 
 ## Inference Modes
 ### Image
