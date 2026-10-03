@@ -20,23 +20,18 @@ Six types of PCB defects:
 1. Dataset Preparation
    - Source dataset in Pascal VOC format and converted annotations to YOLO format
    - Created data.yaml with class definitions and uploaded to Ultralytics Platform for training
-   <img width="814" height="203" alt="dataset in Platform" src="https://github.com/user-attachments/assets/e4d1052d-6042-4e10-9fdf-d12eaa09e12a" />
-
   
-3. Training Details   
+2. Training Details   
    |Model|YOLO26n|
    |-----|-------|
    |Platform|Ultralytics Platform|
    |CPU|AMD EPYC 9655 96-Core Processor|
    |GPU|NVIDIA RTX 2000 Ada|
    |Training Cost| $0.13USD|
-   <img width="1184" height="391" alt="Overview of YOLO platform" src="https://github.com/user-attachments/assets/eb636980-400f-4ab4-a9ec-ba16344a22b3" />
-
    
-5. Export & Optimization
+3. Export & Optimization
    - Exported trained PyTorch model to OpenVINO format
-<img width="1299" height="192" alt="Snipaste_2026-05-20_02-40-35-removebg-preview" src="https://github.com/user-attachments/assets/38ee65a6-18ca-430f-8fe0-4a7a0c9dffdf" />
-
+     
 ## Results
 |Metric|Score|
 |------|------|
@@ -44,8 +39,6 @@ Six types of PCB defects:
 |mAP50-95|65.6%|
 |Precision|97.3%|
 |Recall|98%|
-
-<img width="590" height="112" alt="Snipaste_2026-05-20_03-20-23" src="https://github.com/user-attachments/assets/06ba7ab1-9ac2-4f58-9d1b-7e54713d1531" />
 
 ## Inference Modes
 ### Image
